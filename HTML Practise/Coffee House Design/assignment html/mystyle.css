@@ -1,0 +1,55 @@
+
+.redirect_panel{
+	auto-padding:false;
+	margin-top : 0px;
+	background-color: #593C1F;
+	text-align : center-left;
+}
+
+nav{
+	/* text-align:center; */
+	font-weight:bold;
+	font-size:1.5em;
+	padding-top:0px; 
+	height:34px;
+	float:left; 
+	width:100%; 
+	border-color : black;
+	}
+
+nav a:link{
+	text-decoration:none;
+	color:#fef6c2; 
+	
+	}
+
+nav a:visited{
+	text-decoration:none;
+	color:#fef6c2; 
+	
+	}
+
+nav a:hover{
+	text-decoration:none;
+	color:#cc9933; 
+	}
+	
+#footer_div{
+	text-align : center;
+	background-color: #593C1F;
+}
+
+#body_div {
+ 	background-image: url("coffee_couple.jpg");
+	background-repeat: no-repeat, repeat;
+	font-family: "Helvetica", Times, serif;
+	font-variant-caps : small-caps;
+}
+
+#filler_div{
+	background-color: #BD6C33;
+}
+
+#footer_div a{
+color: #ffffff;
+}

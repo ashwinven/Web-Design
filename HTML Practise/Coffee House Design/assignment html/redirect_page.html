@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>Customer Feedback</title>
+      <link rel="stylesheet" type="text/css" href="myredirectpage.css">
+   </head>
+   <body>
+      <div id="content_div" width="500px" height = "1500px">
+         <br/>
+         <p> &nbsp; Dear Customer,<br/>
+         <ul>
+            <li>Your feedbacks are important to us. It will directly be mailed to <b>Mr.Samuel Peter, the director of<br/>
+               Saarah Coffee House</b> and would remain confidential.
+            </li>
+            <li>Kindly let us know if
+               there's any queries and we will try to reach out to you within
+               24 hours<br/> of your submission.
+            </li>
+         </ul>
+         </p>
+         <div id ="form_div_panel">
+            <form id ="dialog_panel" action = "/submitted_form.html">
+               First name:<br/>
+               <input type="text" name="firstname"><br>
+               Last name:<br/>
+               <input type="text" name="lastname">
+               <br/>
+               Your e-mail address:<br/>
+               <input type="text" name="email">
+               <br/>
+               Your Contact Number: </br>
+               <input type="text" name="contact">
+               <br/>
+               Your Feedback:<br/>
+               <textarea name="message" rows="10" cols="40">
+               </textarea>
+               <br/>
+               <input type="submit" value="Submit" formaction="submitted_form.html">
+               <br>
+               <br>
+            </form>
+         </div>
+      </div>
+   </body>
+</html>

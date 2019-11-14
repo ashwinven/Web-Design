@@ -1,0 +1,13 @@
+#body_div {
+ 	background-image: url("coffee_couple.jpg");
+	background-repeat: no-repeat, repeat;
+	font-family: "Helvetica", Times, serif;
+	font-variant-caps : small-caps;
+}
+.back_reference{
+	background-color: #BD6C33;
+	border-color : black;
+	text-align : center;
+	font-weight: bold;
+	font-size:1.5em;
+}

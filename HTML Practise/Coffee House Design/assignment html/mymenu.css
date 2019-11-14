@@ -1,0 +1,15 @@
+table, th, td {
+  border: 1px solid black;
+}
+#menu_div{
+		background-image: url("coffee_couple.jpg");
+	background-repeat: no-repeat, repeat;
+}
+
+.back_reference{
+	background-color: #BD6C33;
+	border-color : black;
+	text-align : center;
+	font-weight: bold;
+	font-size:1.5em;
+}
