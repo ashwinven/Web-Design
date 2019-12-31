@@ -1,0 +1,6 @@
+<img class="product-image" [src]="product.imageUrl">
+
+<button (click)="showDialog = !showDialog" class="btn-product" >Show Product</button>
+  <app-dialog [(visible)]="showDialog">
+    <img [src]="product.imageUrl" alt="Shoe"/>
+  </app-dialog>

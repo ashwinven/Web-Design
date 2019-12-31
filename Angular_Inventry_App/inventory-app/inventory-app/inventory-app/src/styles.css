@@ -1,0 +1,57 @@
+ /*You can add global styles to this file, and also import other style files */
+
+body {
+    margin-top: 40px;
+}
+
+.item {
+    display: block;
+    margin: 10px auto;
+    padding: 5px;
+    max-width: 600px;
+    min-height: fit-content;
+    position: relative;
+}
+
+.item:before, .item:after {
+    content: "";
+    display: table;
+}
+
+.item:after {
+    clear: both;
+}
+
+.item.selected {
+    box-shadow: 0 0 0 2px grey;
+    border-radius: 5px;
+}
+
+.product-image {
+    float: left;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    clear: both;
+}
+
+.header {
+    font: bold 1.2em sans-serif;
+}
+
+.product-sku {
+    line-height: 2em;
+}
+
+.price-display {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 1.1em;
+}
+
+.btn-product{
+    position: absolute;
+    top: 50px;
+    right: 20px;
+}
