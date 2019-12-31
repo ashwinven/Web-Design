@@ -1,0 +1,33 @@
+<h3><a class="btn btn-secondary" href="/user"><i class="fa fa-plus"></i> Create New User</a> User List</h3>
+<table class="table table-striped">
+    <script>
+        function deleteByPwd(){
+            var pwd = window.prompt('Please enter your password');
+
+            if(pwd == "Test@1234"){
+                alert("Record has been deleted !");
+            }else{
+                alert("Incorrect password !");
+                event.preventDefault();
+            }
+        }
+    </script>
+    <thead>
+        <tr>
+            <th>Email</th>
+            <th>Password</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each list}}
+        <tr>
+            <td>{{this.email}}</td>
+            <td>{{this.password}}</td>
+            <td>
+                <a href="/user/{{this._id}}"><i class="fa fa-pencil fa-lg" aria-hidden="true"></i></a>
+                <a href="/user/delete/{{this._id}}" onclick="deleteByPwd()"><i class="fa fa-trash fa-lg" aria-hidden="true"></i></a>
+            </td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
