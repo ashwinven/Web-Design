@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <title>Feedback</title>
+  <style>
+    label {	float: left;
+			width: 150px;}
+      #container{
+          width: 700px;
+          margin: auto;
+          background-color: beige;
+      } 
+      main{
+          padding: 50px;
+	  }
+	  .invalid { 
+		  border-color: red; 
+		}
+	  #errFirstName, #errLastName, #errEmailId, #errPhone, #errZipCode
+		 { 
+			color: red;
+			float:right;
+			margin: auto;
+		}
+	  #errTitle, #errSource, #errDrink, #errComment, #errText1, #test{
+		color: red;
+		float:right;
+	  }	
+
+  </style>
+ </head>
+ <body>
+ <div id="container">
+	 
+	 <main>
+	 <h2>Feedback</h2>
+	 <h3>Love something? Hate something? Let us know!</h3>
+		 Note : Fields marked with an asterisk(*) are mandatory
+		 <br><br>
+		 <form name="myForm" onsubmit="return validateForm(myForm)">
+			<label>Title*:</label>
+			<input type="radio" name="title" id="miss" value="miss" />Miss
+			<input type="radio" name="title" id="mr" value="mr" />Mr.
+			<input type="radio" name="title" id="mrs" value="mrs" />Mrs.
+			<div id="errTitle"></div>
+			<br><br>
+			<label for="firstName">First Name*:</label>
+			<input type="text" name="firstName" id="firstName" placeholder="First Name"/>	
+			<div id="errFirstName"></div>
+			<br><br>
+			
+
+			<label for="lastName">Last Name*:</label>
+			<input type="text" name="lastName" id="lastName" placeholder="Last Name" />
+			<div id="errLastName"></div>
+			<br><br>
+			
+
+			<label for="emailId">Email Id*:</label>
+			<input type="text" name="emailId" id="emailId" placeholder="yourname@domain.com" />
+			<div id="errEmailId"></div>
+			<br><br>
+			
+
+			<label for="phoneNumber">Phone Number*:</label>
+			<input type="text" name="phoneNumber" id="phoneNumber" placeholder="xxx-xxx-xxxx" />
+			<div id="errPhone"></div>
+			<br><br>
+			
+            <label for="zipcode">Zip Code*:</label>
+			<input type="text" name="zipcode" id="zipcode" placeholder="xxxxxx" />
+			<div id="errZipCode"></div>
+			<br><br>
+             
+            <label for="source">How did you hear*:</label>
+			<input type='checkbox' name="source" value="facebook" /> Facebook
+            <input type='checkbox' name="source" value="google" /> Google
+			<input type='checkbox' name="source" value="yelp" /> Yelp 
+			<div id="errSource"></div>
+			<br><br> 
+			
+			<label for="drinks">Drinks*:</label>
+			<select name="drink" id="drink" onchange="selectFunction(this)">
+				<option value="">Select your drink</option>
+				<option value="cappuccino">Cappuccino</option>
+				<option value="espresso">Espresso</option>
+				<option value="macchiato">Macchiato</option>
+				<option value="mochaccino">Mochaccino</option>
+				<option value="vienna">Vienna</option>
+			</select>
+			<div id="errDrink"></div>
+			<div id=cappuccino style="display: none; margin-left: 150px; margin-bottom: -25px; clear: both">
+				<input type="checkbox" name="checkDrink" value="Large Capp (75¢)" onclick="onCheck(this)"> Large Capp (75¢) 
+				
+			</div>
+			
+			<div id=espresso style="display: none; margin-left: 150px; margin-bottom: -25px">
+				<input type="checkbox" name="checkDrink" value="Large Espr (100¢)" onclick="onCheck(this)"> Large Espr (100¢)
+				
+			</div>
+			<div id=macchiato style="display: none; margin-left: 150px; margin-bottom: -25px">
+				<input type="checkbox" name="checkDrink" value="Large Macc (70¢)" onclick="onCheck(this)"> Large Macc (70¢)
+				
+			</div>
+			<div id=mochaccino style="display: none; margin-left: 150px; margin-bottom: -25px">
+				<input type="checkbox" name="checkDrink" value="Large Mocc (125¢)" onclick="onCheck(this)"> Large Mocc (125¢)
+				
+			</div>
+			<div id=vienna style="display: none; margin-left: 150px; margin-bottom: -25px">
+				<input type="checkbox" name="checkDrink" value="Large Vienna (80¢)" onclick="onCheck(this)"> Large Vienna (80¢)
+				
+			</div><br><br>
+			<div id="text1" style="display: none; margin-left: 150px"><input type="text" id="txtInput1"><div id="errText1"></div></div>
+			
+			<div id="test"></div>
+			<br><br> 
+             
+			<label for="comments">Comments*:</label>
+			<textarea name="comments" id="comments" placeholder="Your comments" rows="5" cols="25"></textarea>
+			<div id="errComment"></div>
+			<br><br>
+			<input type="submit" >
+			<input type="reset">
+			<br><br>
+		 </form>
+	 </main>
+ </div><br><br>
+ <div id="myTable" align="center">
+ </div><br>
+ <div id="back" style="display: none" align="center"><a href="Form.html">Go back</a></div>
+ <script type="text/javascript" src="validate.js"></script>
+
+ </body>
+</html>
