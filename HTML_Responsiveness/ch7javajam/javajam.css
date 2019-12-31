@@ -1,0 +1,126 @@
+.coffee_body_div{
+    background-color: #F5F5D6;
+    color: #2e0000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url("background.gif"); 
+}
+.header_div{
+    background-color: #D2B48C;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    height:100px;
+    margin: 0%;
+    background-image: url("javalogo.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    text-indent: -9999px;
+}
+#footer_div{
+    background-color: #D2B48C;
+    color: #000000;
+    font-size: .60em;
+    font-style: italic;
+    text-align: center;
+    padding:10px;
+}
+.redirect_panel{
+    float: left;
+    width:160px;
+    font-weight: bold;
+    padding:10px;
+    background-color: #e2d2b0;
+    text-align: center;
+}
+
+#hero{
+    height:300px;
+    color: #F5F5dc;
+    background-size: 100% 100%;
+    background-image: url("heroroad.jpg");
+    background-repeat: no-repeat;
+    padding-right: 2em;
+}
+
+nav a{
+    text-decoration: none;
+    text-align: center;
+    
+}
+
+nav a:link{
+    color: #795240;
+}
+
+nav a:visited { color: #A58366; }
+nav a:hover {  color:   #F5F5D6; } 
+
+footer a:visited{color: #000000;}
+
+footer a{color : #2e0000; }
+
+.list_div{
+    font-weight: bold;
+}
+
+li {
+    list-style-image: url(marker.gif);    
+    }
+
+ul li{
+    list-style-position: inside;
+}
+h2{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+h3{
+    background-color: #E6D6A9;
+    text-transform: uppercase;
+}
+#wrapper{
+    width:80%;
+    background-color: #E2D2B0;  
+    min-width: 960px;
+    max-width: 2048px;
+    box-shadow: 3px 3px 3px #2E0000;
+}
+
+#main_div_panel{
+    padding:20px;
+    display:block;
+}
+
+.news{
+    overflow: auto;
+    font-size: 90%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+main{
+    background-color: #F5F5DC;
+    margin-left: 175px;
+}
+
+main {
+    overflow:auto;
+    font-size: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+nav ul li{
+    list-style: none;  
+    padding-left: 0px;
+    font-size: 1.2em; 
+}
+#hero_jobs{
+    background-image: url("underconstruction.jpg");  
+    height:300px;
+    color: #F5F5dc;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding-right: 2em;
+}
+
+.fragment_class{
+    padding-top: 0px;
+    text-align: right;
+}

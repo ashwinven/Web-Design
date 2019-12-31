@@ -1,0 +1,38 @@
+.coffee_body_div{
+    background-color: #F5F5D6;
+    color: #2e0000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.header_div{
+    background-color: #D2B48C;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#footer_div{
+    background-color: #D2B48C;
+    color: #000000;
+    font-size: .60em;
+    font-style: italic;
+   text-align: center;
+}
+.redirect_panel{
+    font-weight: bold;
+}
+
+nav a{
+    text-decoration: none;
+}
+
+.list_div{
+    font-weight: bold;
+}
+
+li {
+    list-style-image: url(marker.gif);
+    }
+h2{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+h3{
+    background-color: #E6D6A9;
+    text-transform: uppercase;
+}
